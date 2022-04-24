@@ -7,8 +7,43 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Figuras Geometricas</h1>
 
+
+    <header>
+        <h1>Figuras Geometricas</h1>
+        <p>Encuentra el perimetro y el area de tu figura favorita</p>
+    </header>
+
+    <section class="cuadrado">
+        <form action="">
+            <h1>Cuadrado</h1>
+            <label for="inputCuadrado">Ingresa el valor de los lados de tu cuadrado y luego selecciona la operacion que desees realizar: </label>
+            <input type="number" id="inputCuadrado" placeholder="Ingrese la medida">
+            <button type="button" onclick="calcularPerimetroCuadrado()">Perimetro</button>
+            <button type="button" onclick="calcularAreaCuadrado()">Area</button>
+        </form>
+    </section>
+    <section class="triangulo">
+        <form action="">
+            <h1>Triangulo</h1>
+            <label for="">Ingresa el valor de los lados de tu triangulo y luego selecciona la operacion que desees realizar: </label>
+            <input type="number" id="inputTrianguloLado1" placeholder="Ingrese el lado #1">
+            <input type="number" id="inputTrianguloLado2" placeholder=" Ingrese el lado #2">
+            <input type="number" id="inputTrianguloBase" placeholder="Ingrese la Base">
+            <input type="number" id="inputTrianguloAltura" placeholder="Ingrese la altura">
+            <button type="button" onclick="calcularPerimetroTriangulo()">Perimetro</button>
+            <button type="button" onclick="calcularAreaTriangulo()">Area</button>
+        </form>
+    </section>
+    <section class="circulo">
+        <form action="">
+            <h1>Circulo</h1>
+            <label>Ingresa el radio del circulo y luego selecciona la operacion que desees realizar: </label>
+            <input type="number" id="inputCirculoRadio" placeholder="Ingrese el radio">
+            <button type="button" onclick="calcularPerimetroCirculo()">Perimetro</button>
+            <button type="button" onclick="calcularAreaCirculo()">Area</button>
+        </form>
+    </section>
     <script src="app.js"></script>
 </body>
 </html>
